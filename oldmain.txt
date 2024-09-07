@@ -1,0 +1,39 @@
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=
+# @app.get('/blogs')
+# def index(limit: int = 10, published: bool = True, sort: Optional[str] = None):
+#     if published:
+#         return {'data': f'{limit} blogs '}
+#     return {'data': 'None'}
+#
+#
+# @app.get('/about')
+# def about():
+#     return {'data': 'about page'}
+#
+#
+# @app.get('/blogs/unpublished')
+# def unpublished():
+#     return {'data': 'unpublished blogs'}
+#
+#
+# @app.get('/blogs/{id}')
+# def show(id: int):
+#     # fetch blog with id = id
+#     return {'data': id}
+#
+#
+# @app.get('/blogs/{id}/comments')
+# def comment(id: int ):
+#     # fetch comment of blog with id = id
+#     return {'data': ['1', '2']}
+#
+#
+# class Blogs(BaseModel):
+#     title: str
+#     body: str
+#     published: Optional[bool]
+#
+#
+# @app.post('/blog')
+# def create_blog(request: Blogs):
+#     return {'data': f'Blog is created with title as {request.title}'}
