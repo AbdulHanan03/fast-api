@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String
-from blogs.database import Base
+from database import Base
 #sqlalchemy model = table
 
 

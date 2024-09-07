@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Depends, status, HTTPException
-from blogs.schemas import Blog, ShowBlog
-from blogs import models
-from blogs.database import engine, SessionLocal
+from schemas import Blog, ShowBlog
+import models
+from database import engine, SessionLocal
 from sqlalchemy.orm import Session
 
 app = FastAPI()
